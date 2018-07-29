@@ -8,7 +8,7 @@ Open google chrome
     Call Method    ${opt}    add_argument    --no-sandbox
     Call Method    ${opt}    add_argument    --disable-setuid-sandbox
     Comment    Call Method    ${opt}    add_argument    --proxy-server\=http://localhost:3128
-    Call Method    ${opt}    add_argument    --proxy-server\=http://199.245.56.153:3128
+    Comment    Call Method    ${opt}    add_argument    --proxy-server\=http://199.245.56.153:3128
     Create Webdriver    Chrome    chrome_options=${opt}
     Go To    http://whatismyipaddress.com/
     Capture Page Screenshot
